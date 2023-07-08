@@ -3,13 +3,13 @@ header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #129ada;
-    color: #ffffff;
-    
+    color: #9b1313;
 }
 
 header h1 {
     display: inline-block;
     font-size: 60px;
+    font-family: 'fantasy','cursive', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header nav {
@@ -17,12 +17,45 @@ header nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
- 
+    font-size: 20px; 
 }
-
+div { 
+  height: 500px;
+  width: 100% ;  
+  background-image: url('./images/DSC00898.JPG');
+  background-size: cover;   
+  background-position: center;
+}
+.text-box{
+    font-size: 90px;
+    position: absolute;
+    top: 450px;
+    right: 25px;
+    
+    background-color: #c01c9c
+}
 ul li {
     display: inline-block;
     margin-left: 50px;
     font-size: larger;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;   
+
+}
+h2 {
+    font-size: 40px;
+    width: 20%;
+   
+}
+.flex-width{
+    overflow-wrap: break-word;
+    width: 80%;
+}
+footer {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #9b1313;
+    color: #129ada;
 }
