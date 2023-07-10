@@ -30,9 +30,9 @@ header nav {
 }
 
 .text-box {
-    font-size: 90px;
+    font-size: 60px;
     position: absolute;
-    top: 450px;
+    top: 550px;
     right: 25px;
 
     background-color: #c01c9c
@@ -40,24 +40,27 @@ header nav {
 
 ul li {
     display: inline-block;
-    margin-left: 10 0px;
+    padding-left: 125px;
+    margin: 20px;
     font-size: larger;
+    flex-wrap: wrap;
 }
 
 .flex-row {
     width: 80%;
     display: flex;
     height: auto;
-    margin: auto;
-    
+    margin-left: 5%;
     max-width: 100%;
 
 }
 
 h2 {
-    font-size: 40px;
-    width: 20%;
+    font-size: 30px;
+    width: 10%;
     border-right: 5px solid darkblue;
+    margin-right: 10px;
+
 
 }
 
@@ -65,27 +68,40 @@ h2 {
     font-size: larger;
     overflow-wrap: break-word;
     width: 80%;
+    margin-left: 10px;
 }
 
 .wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-flex-direction: column;
-
-max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    object-fit: fill;
+    max-width: 1000vh;
+    max-height: 800px;
+    margin-left: 30%;
 }
 
+.wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+
+}
 
 .projects {
-    width: 600px;
-    height: 800px;
+    max-width: 600px;
+    max-height: 800px;
     overflow: hidden;
     position: relative;
-    margin: 80px;
-    box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+    margin: 10px;
+    box-shadow: 0 2px 20px 2px rgba(14, 13, 13, 0.3);
     display: flex;
+    object-position: center;
 }
 
 .projects::after {
@@ -109,6 +125,7 @@ max-width: 100%;
     top: 0;
     left: 0;
     opacity: 1;
+
 }
 
 .projects img {
@@ -118,7 +135,6 @@ max-width: 100%;
     transition: all 0.5s ease;
     width: 100%;
     height: auto;
-
 }
 
 .projects:hover img {
@@ -148,9 +164,9 @@ max-width: 100%;
 .projects .info h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: bebas neue;
+    font-family: cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .projects .info h3,
@@ -163,6 +179,7 @@ max-width: 100%;
 .projects:hover .info h3,
 .projects:hover .info p {
     transform: translateX(0);
+
 }
 
 .projects .info p {
@@ -175,4 +192,11 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #9b1313;
     color: #129ada;
+    display: flex;
+}
+
+.contact-list{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly
 }
