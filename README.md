@@ -26,7 +26,7 @@ Sharing is caring!
 ![screenshot of Majestic-Porfolio](assets/images/Screenshot%202023-07-12%20150415.png)
 ![screenshot of Majestic-Porfolio](assets/images/Screenshot%202023-07-12%20150502.png)
 
-
+ link to web page https://2dogsandaguy.github.io/majestic-porfolio/
 
 ## credits
 
