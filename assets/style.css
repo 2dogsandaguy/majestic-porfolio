@@ -1,13 +1,14 @@
-body{
+body {
     flex-wrap: wrap;
 }
+
 header {
-    
+
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #129ada;
     color: #9b1313;
-    display:flex ;
+    display: flex;
     min-width: 100%;
     align-items: center;
 }
@@ -31,7 +32,7 @@ header nav {
     background-repeat: none;
     background-size: cover;
     background-position: center;
-    
+
 }
 
 .text-box {
@@ -73,9 +74,11 @@ h2 {
 
     min-width: 80%;
 }
-.container .projects{
+
+.container .projects {
     min-width: 100%;
 }
+
 .wrapper-2 {
     display: flex;
     align-items: center;
@@ -83,20 +86,20 @@ h2 {
     max-width: 75%;
 
 }
-.wrapper-2 .projects{
+
+.wrapper-2 .projects {
     margin-right: -200px;
 }
+
 .projects {
-   max-width: 400px;
+    max-width: 400px;
     max-height: 600px;
     overflow: hidden;
     position: relative;
     border-radius: 10%;
     margin: 10px;
-    
     box-shadow: 0 2px 20px 2px rgba(14, 13, 13, 0.3);
     display: flex;
-    /*object-position: center;*/
 }
 
 .projects::after {
@@ -175,27 +178,19 @@ h2 {
 .projects:hover .info h3,
 .projects:hover .info p {
     transform: translateX(0);
-
 }
 
 .projects .info p {
     font-size: 20px;
     line-height: 25px;
 }
-.ex-job{
-    width: 80%;
-    margin-left: 10px;
-    max-height: 400px;
 
-    
-}
-marquee img{
+marquee img {
     max-height: 300px;
     min-height: 300px;
 }
 
 footer {
-
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #9b1313;
@@ -205,7 +200,7 @@ footer {
     align-items: center;
 }
 
-.contact-list{
+.contact-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -213,56 +208,69 @@ footer {
     font-size: x-large;
 }
 
-@media only screen and (max-width: 875px){
-    header  {flex-direction: column;}
-
-    .text-box{ font-size: 40px;}
-
-    h2 {border-right: none;
-        border-bottom: 5px solid darkblue ;
-        min-width: 100%;
-       }
-       .flex-row{
+@media only screen and (max-width: 875px) {
+    header {
         flex-direction: column;
-       }
-       .container{
+    }
+
+    .text-box {
+        font-size: 40px;
+    }
+
+    h2 {
+        border-right: none;
+        border-bottom: 5px solid darkblue;
         min-width: 100%;
-       }
-       .wrapper-2{
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .wrapper-2 {
         display: flex;
         flex-wrap: wrap;
         align-items: revert;
         min-width: 100%;
-       }
-    .wrapper-2 .projects{
+    }
+
+    .wrapper-2 .projects {
         margin-right: unset;
         max-width: 45%;
         max-height: fit-content;
-       }
-
-    footer {flex-direction: column
     }
-     
+
+    footer {
+        flex-direction: column
+    }
+
 }
 
-
-
-@media only screen and (max-width: 375px){
-   .text-box{ font-size: 30px;
+@media only screen and (max-width: 375px) {
+    .text-box {
+        font-size: 30px;
     }
-    ul  {
+
+    ul {
         flex-direction: column;
         align-items: end;
-    } 
+    }
+
     h1 {
         align-items: center;
     }
-    .wrapper-2{
+
+    .wrapper-2 {
         min-width: 100%;
         flex-direction: column;
         align-items: center;
     }
-    .wrapper-2 .projects{
+
+    .wrapper-2 .projects {
         min-width: fit-content;
     }
 
