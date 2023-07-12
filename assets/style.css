@@ -1,49 +1,46 @@
+body{
+    flex-wrap: wrap;
+}
 header {
-    display: flex;
+    
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #129ada;
     color: #9b1313;
+    display:flex ;
+    min-width: 100%;
+    align-items: center;
 }
 
 header h1 {
     display: inline-block;
-    flex-wrap: wrap;
     font-size: 60px;
     font-family: 'fantasy', 'cursive', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
 }
 
 header nav {
-    padding-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
 #background {
-    height: 500px;
+    height: 510px;
     width: 100%;
     background-image: url('./images/DSC00898.JPG');
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    
 }
 
 .text-box {
     font-size: 60px;
     position: absolute;
-    top: 550px;
-    right: 25px;
+    top: 570px;
+    right: 5px;
 
     background-color: #c01c9c
-}
-
-ul li {
-    display: inline-block;
-    padding-left: 125px;
-    margin: 20px;
-    font-size: larger;
-    flex-wrap: wrap;
 }
 
 .flex-row {
@@ -52,51 +49,38 @@ ul li {
     height: auto;
     margin-left: 5%;
     max-width: 100%;
-
+    margin-top: 15px;
 }
 
 h2 {
-    font-size: 30px;
-    width: 10%;
+    font-size: 25px;
+    color: rgb(241, 29, 1);
+    min-width: 20%;
     border-right: 5px solid darkblue;
     margin-right: 10px;
-
-
+    font-weight: bolder;
+    flex-wrap: wrap;
 }
 
 .flex-width {
     font-size: larger;
     overflow-wrap: break-word;
     width: 80%;
-    margin-left: 10px;
+
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    object-fit: fill;
-    max-width: 1000vh;
-    max-height: 800px;
-    margin-left: 30%;
-}
-.container{
-    max-width: 1000vh;
-    max-height: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 20%;
-}
 
+    min-width: 80%;
+}
+.container .projects{
+    min-width: 100%;
+}
 .wrapper-2 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    display: flex;
-    max-width: 70%;
+    justify-content: center;
+    max-width: 75%;
 
 }
 .wrapper-2 .projects{
@@ -111,7 +95,7 @@ h2 {
     margin: 10px;
     
     box-shadow: 0 2px 20px 2px rgba(14, 13, 13, 0.3);
-    /*display: flex;*/
+    display: flex;
     /*object-position: center;*/
 }
 
@@ -201,31 +185,85 @@ h2 {
 .ex-job{
     width: 80%;
     margin-left: 10px;
-    max-height: 300px;
+    max-height: 400px;
+
     
 }
 marquee img{
-    max-height: fit-content;
+    max-height: 300px;
+    min-height: 300px;
 }
-.scrolling-images{
-    min-width: 100%;
-    max-height: 100%;
-}
+
 footer {
+
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #9b1313;
     color: #129ada;
     display: flex;
+    min-width: 100%;
+    align-items: center;
 }
 
 .contact-list{
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 875px){
+    header  {flex-direction: column;}
+
+    .text-box{ font-size: 40px;}
+
+    h2 {border-right: none;
+        border-bottom: 5px solid darkblue ;
+        min-width: 100%;
+       }
+       .flex-row{
+        flex-direction: column;
+       }
+       .container{
+        min-width: 100%;
+       }
+       .wrapper-2{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: revert;
+        min-width: 100%;
+       }
+    .wrapper-2 .projects{
+        margin-right: unset;
+        max-width: 45%;
+        max-height: fit-content;
+       }
+
+    footer {flex-direction: column
+    }
+     
 }
 
 
-@media only screen and (max-width: 768px){
-    
+
+@media only screen and (max-width: 375px){
+   .text-box{ font-size: 30px;
+    }
+    ul  {
+        flex-direction: column;
+        align-items: end;
+    } 
+    h1 {
+        align-items: center;
+    }
+    .wrapper-2{
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-2 .projects{
+        min-width: fit-content;
+    }
+
 }
