@@ -3,7 +3,6 @@ body {
 }
 
 header {
-
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #129ada;
@@ -19,12 +18,12 @@ header h1 {
     font-family: 'fantasy', 'cursive', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
 }
-
+ /* making the hyper links larger with font*/
 header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/*image put in css */
 #background {
     height: 510px;
     width: 100%;
@@ -32,18 +31,16 @@ header nav {
     background-repeat: none;
     background-size: cover;
     background-position: center;
-
 }
-
+/*where i wanted text on background image*/
 .text-box {
     font-size: 60px;
     position: absolute;
     top: 570px;
     right: 5px;
-
     background-color: #c01c9c
 }
-
+/*how i contained the projects images*/
 .flex-row {
     width: 80%;
     display: flex;
@@ -69,12 +66,11 @@ h2 {
     width: 80%;
 
 }
-
+/*make the projects fit in open space*/
 .wrapper {
-
     min-width: 80%;
 }
-
+/*keep project filling empty space*/
 .container .projects {
     min-width: 100%;
 }
@@ -86,7 +82,7 @@ h2 {
     max-width: 75%;
 
 }
-
+/*haveing the projects overlap each other in larger screen form*/
 .wrapper-2 .projects {
     margin-right: -200px;
 }
@@ -101,7 +97,7 @@ h2 {
     box-shadow: 0 2px 20px 2px rgba(14, 13, 13, 0.3);
     display: flex;
 }
-
+/*making images move and text pop up in a box when hovered line 100-182*/
 .projects::after {
     position: absolute;
     content: '';
@@ -185,11 +181,6 @@ h2 {
     line-height: 25px;
 }
 
-marquee img {
-    max-height: 300px;
-    min-height: 300px;
-}
-
 footer {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -207,7 +198,7 @@ footer {
     justify-content: space-evenly;
     font-size: x-large;
 }
-
+/*ajust content for screen sizes*/
 @media only screen and (max-width: 875px) {
     header {
         flex-direction: column;
@@ -247,7 +238,6 @@ footer {
     footer {
         flex-direction: column
     }
-
 }
 
 @media only screen and (max-width: 375px) {
@@ -273,5 +263,4 @@ footer {
     .wrapper-2 .projects {
         min-width: fit-content;
     }
-
 }
